@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #head{
+        background-color: blue;
+        padding: 20px;
+
+    }
+    #head p{
+        display: none;
+    }
+/* withthe help of js we can add this css in js to the div#main */
+    .demo{
+        background-color: yellow;
+        padding: 20px;
+    }
+</style>
+<body>
+    <!-- onclick is  event -->
+    <!-- event is to perform any actions or tasks  -->
+    <!-- isme function bna k function ko call krna padta h event k andr -->
+    <button onclick="fun()">click here</button>
+
+
+
+   <button onclick="add()">Click Here</button>
+
+
+
+   <button ondblclick="sqr()">Click Here</button>
+
+
+   <!-- jish se operation perform ho rha h or jispe operation perform ho rha h ja m unhe targer krna padtha h -->
+   <div onclick="div()" id="head">
+    <h1>click here</h1>
+    <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eius! Nulla minima reprehenderit quidem veritatis voluptatibus.
+         Cumque at illo consequatur eligendi nostrum obcaecati, dolore incidunt accusantium ut soluta labore id!</p>
+   </div>
+
+
+<h1 id="co">0</h1>
+<button onclick="inc()">Inc</button>
+<button onclick="res()">Reset</button>
+<button onclick="dec()">Decrement</button>
+
+<!-- with the hehp of js new class ad on wit the css property  -->
+<!-- html p classlist add krne k liye classlist.add -->
+<div id="main">
+    <h1>Redhat</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus suscipit quae exercitationem corrupti aspernatur sunt,
+         nobis iusto pariatur! A in aliquid voluptatibus facere vel repudiandae id harum doloribus quae vitae.
+    </p>
+</div>
+<!-- to apply css property -->
+<button onclick="d()">Add here</button>
+<!-- to remove css property -->
+<button onclick="d1()">Remove here</button>
+<!-- for both add or remove one by one click -->
+<button onclick="d2()">Add & Remove</button>
+
+
+
+    <script>
+        function fun(){
+            alert("This is Working")
+
+        
+        }
+        let p=document.getElementById("pera")
+        function div(){
+        p.style.display="block"
+        }
+
+        //  for add css property
+        let di=document.getElementById("main")
+        function d(){
+            di.classList.add('demo')
+        }
+        // for remove css property
+        function d1(){
+            di.classList.remove('demo')
+        }
+        // for both add or remove css property
+        function d2(){
+            di.classList.toggle('demo')
+        }
+        
+    </script>
+ <script src="events.js"></script>
+</body>
+</html>
