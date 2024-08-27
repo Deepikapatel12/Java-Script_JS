@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div style="display: flex; gap:30px;">
+    <div>
+        <h1 onmouseenter="fun1()">Mobile</h1>
+        <h1 onmouseenter="fun2()">laptop</h1>
+    </div>
+    <div>
+        <img src="6.jpeg" alt="" height="200px" width="200px" id="im">
+    </div>
+   </div> 
+   <script>
+    let im=document.getElementById('im')
+    function fun1(){
+        im.src="6.jpeg"
+    }
+    function fun2(){
+        im.src="8.jpeg"
+    }
+   </script>
+</body>
+</html>
