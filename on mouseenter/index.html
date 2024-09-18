@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #im{
+        background-image: url('js.jpeg');
+    }
+</style>
+<body>
+    <!-- on mouseenter button p cursor ate he msg show hota h -->
+
+    <button onmouseenter="fun()">Hover</button>
+
+    <!-- on mouse leave, onmouse enetr k oppsite work krta h button se cursor hutte he msg show hot h -->
+
+    <button onmouseleave="fun1()">Leave</button>
+
+
+<!-- cursor h1 p le jne se pera show ho hutane se hide ho jy -->
+    <div id="main"  onmouseenter="show()" onmouseleave="hide()">
+        <h1>Move Here</h1>
+        <p id="pera" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est voluptate vel quam eos
+             quia nulla harum facilis, nostrum illo assumenda reiciendis cum? Quae porro fuga et blanditiis dolore alias.</p>
+    </div>
+ 
+
+    <br><br><br>
+    <div id="im">
+        <h1 id="h" onmouseenter="opn()" onmouseleave="close()" style="display: none;">BOTTEL</h1>
+    </div>
+
+    <script>
+function fun(){
+    alert("Working")
+}
+function fun1(){
+    alert("Leave Working")
+}
+let p=document.getElementById("pera")
+function show(){
+  // a.classList.add('p')
+   p.style.display="block"
+}
+function hide(){
+    p.style.display="none"
+}
+    </script>
+</body>
+</html>
